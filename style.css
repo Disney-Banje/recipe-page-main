@@ -24,7 +24,8 @@ html {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 *,
@@ -45,12 +46,12 @@ body {
 
 .recipe_banner {
     height: 22.0rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
 }
 
 .recipe_content {
-    margin: 2.5rem;
+    margin: 0 2.5rem;
 }
 
 article {
@@ -109,8 +110,33 @@ strong {
 }
 
 .item-data {
-    color: var(--Dark-Raspberry);
+    color: var(--Nutmeg);
     font-weight: 600;
+    text-align: start;
+}
+
+th {
+    font-weight: 400;
+}
+
+ th,
+ td{
+    padding: 1.2rem;
+}
+
+tr {
+    border-bottom: 0.05rem solid var(--Wenge-Brown);
+}
+
+table tr:nth-child(4) {
+    border-bottom: none;
+}
+
+table {
+    margin: 2.0rem 0;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 
@@ -138,6 +164,10 @@ strong {
 
     .recipe_content {
         margin: 2.0rem 0;
+    }
+
+    th {
+        text-align: start;
     }
 
 }
